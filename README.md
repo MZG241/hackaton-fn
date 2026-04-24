@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Akazi Nexus - AI Recruitment Frontend (Nexus UI)
 
-## Getting Started
+A premium, glassmorphism-inspired recruitment interface built for the next generation of talent acquisition. Akazi Nexus provides a seamless, AI-integrated experience for both candidates and employers.
 
-First, run the development server:
+## ✨ Premium Experience
+- **Visual Language**: High-end Glassmorphism, deep gradients, and fluid animations.
+- **AI-First UX**: Integrated AI dashboards, real-time CV parsing confirmation, and interactive AI coaching.
+- **Responsive Core**: Engineered for high-stakes operation on any device.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Technology Stack
+- **Framework**: Next.js 15 (App Router & Turbopack)
+- **Styling**: Vanilla CSS with modern Glassmorphism tokens
+- **Animations**: Framer Motion
+- **State Management**: Redux Toolkit (Session & Auth sync)
+- **Networking**: Axios with centralized interceptors
+- **Icons**: Lucide React & Custom Neural Icon Set
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛰️ Architecture & User Flows
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 👤 Candidate Flow
+1. **Node Entry**: Register/Login as a Jobseeker.
+2. **Intelligence Sync**: Upload CV -> AI extracts skills and experience -> User confirms and syncs profile.
+3. **Mission Search**: Browse high-stakes opportunities with AI-predicted match scores.
+4. **Guidance**: Chat with the AI Career Coach for profile optimization and interview prep.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🏢 Employer Flow
+1. **Mission Deployment**: Input a job idea -> AI generates 3 comprehensive listing proposals -> Customize and Publish.
+2. **AI Dashboard**: View a "Bento-style" overview of all candidates.
+3. **Neural Analysis**: Deep-dive into AI screening results (Strengths, Gaps, Risks, and Match Scores).
+4. **Decision Engine**: Side-by-side candidate comparison and quick Hire/Reject synchronization.
 
-## Learn More
+## 🛠️ Setup & Environment
+1. **Clone & Install**: `npm install`
+2. **Environment**: Create a `.env.local` file:
+   ```env
+   NEXT_PUBLIC_API_URL=http://localhost:5000
+   ```
+3. **Run**: `npm run dev`
 
-To learn more about Next.js, take a look at the following resources:
+## 📂 Key Routing
+- `/` - Strategic Entry Landing
+- `/employer-dashboard` - Global operation control for recruiters
+- `/candidate-dashboard` - Career mission tracking for jobseekers
+- `/admin-dashboard` - Platform governance panel
+- `/employer/ai-dashboard/[jobId]` - Advanced AI analysis hub for specific missions
+- `/post-job` - AI-assisted mission parameter definition
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛡️ Governance & Middleware
+The frontend utilizes a `ProtectedRoute` system to ensure that only authorized nodes (Employer, Jobseeker, Admin) can access specific dashboard parameters.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Akazi Nexus: Where Intelligence Meets Opportunity.*
