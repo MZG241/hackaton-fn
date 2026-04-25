@@ -1,4 +1,4 @@
-# Akazi Nexus - AI Recruitment Frontend (Nexus UI)
+# Akazi Nexus - AI Recruitment 
 
 A premium, glassmorphism-inspired recruitment interface built for the next generation of talent acquisition. Akazi Nexus provides a seamless, AI-integrated experience for both candidates and employers.
 
@@ -48,5 +48,4 @@ A premium, glassmorphism-inspired recruitment interface built for the next gener
 ## 🛡️ Governance & Middleware
 The frontend utilizes a `ProtectedRoute` system to ensure that only authorized nodes (Employer, Jobseeker, Admin) can access specific dashboard parameters.
 
----
-*Akazi Nexus: Where Intelligence Meets Opportunity.*
+
